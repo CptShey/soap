@@ -4,7 +4,7 @@ import socket
 
 @app.route("/")
 def hello():
-    html = "<h3>Greet Gott {name}!</h3>" \
+    html = "<h3>Servus {name}!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
            
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname()
