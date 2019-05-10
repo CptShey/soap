@@ -1,4 +1,4 @@
-#FROM 
+FROM cptshey/java:8 
 MAINTAINER CptShey <cpt.shey@icloud.com>
 
 
