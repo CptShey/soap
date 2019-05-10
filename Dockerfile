@@ -4,4 +4,4 @@ ARG PASSWORD
 ENV PASSWORD ${PASSWORD:-secret}
 EXPOSE 8080
 COPY bash /bash
-RUN /bash/install_tomcat
+RUN /bash/install_tomcat.sh
