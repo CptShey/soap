@@ -1,4 +1,4 @@
-FROM tomcat:8-jre8
+FROM ubuntu:18.04
 MAINTAINER CptShey <cpt.shey@icloud.com>
 ARG PASSWORD
 ENV PASSWORD ${PASSWORD:-secret}
