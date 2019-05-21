@@ -16,6 +16,12 @@ StandAllone Oracle Apex Playground - Project
 - [ ] Add Installroutine
 
 ---
+## Get the prebuilt Image from Docker Hub ##
+### Installation: ###
+```
+docker pull cptshey/soap
+```
+## OR ##
 
 ### Building up own image: ###
 ```
