@@ -27,6 +27,7 @@ docker pull cptshey/soap
 ```
 docker build <own-image-name> .
 ```
+## AND START ##
 
 ### Run the container with 8080 port opened: ###
 ```
