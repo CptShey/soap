@@ -2,7 +2,7 @@
 
 echo "---------------------------------------------------- "
 echo "------------ INSTALL MAJOR DEPENDENCIES ------------ "
-apt-get update && apt-get install -y wget nano unzip default-jdk
+sudo apt-get update && apt-get install -y wget nano unzip default-jdk
 
 echo "---------------------------------------------------- "
 echo "------------------- INSTALL TOMCAT ----------------- "
