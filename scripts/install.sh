@@ -2,7 +2,7 @@
 
 echo "---------------------------------------------------- "
 echo "------------ INSTALL MAJOR DEPENDENCIES ------------ "
-apt update && apt install -y wget nano unzip default-jdk
+apt-get update && apt-get install -y curl yum wget nano unzip default-jdk
 
 echo "---------------------------------------------------- "
 echo "------------------- INSTALL TOMCAT ----------------- "
@@ -12,6 +12,3 @@ mv apache-tomcat-8.5.40 /usr/local/tomcat
 
 echo "---------------------------------------------------- "
 echo "------------------ MOVING FILES --------------------"
-
-echo "------------------ START SSH INSTALL --------------------"
-./scripts/install_ssh.sh 
