@@ -12,3 +12,6 @@ mv apache-tomcat-8.5.40 /usr/local/tomcat
 
 echo "---------------------------------------------------- "
 echo "------------------ MOVING FILES --------------------"
+
+echo "------------------ START SSH INSTALL --------------------"
+./scripts/install_ssh.sh 
