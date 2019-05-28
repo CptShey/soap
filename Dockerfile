@@ -2,9 +2,6 @@ FROM ubuntu:18.04
 
 MAINTAINER CptShey <cptshey@icloud.com>
 
-EXPOSE 8080
-
-CMD mkdir /scripts
+EXPOSE 22 8080
 COPY scripts /scripts
-
 CMD sh /scripts/install.sh
