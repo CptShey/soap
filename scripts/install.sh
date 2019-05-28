@@ -7,5 +7,5 @@ echo "------------ INSTALL MAJOR DEPENDENCIES ------------ "
 apt-get update && apt-get install -y unzip vim
 echo "------------ UPTDATE COMPLETE ------------ "
 
-chmod+x /scripts/install.ssh.sh
-./scripts/install_ssh.sh
+
+sh /scripts/install_ssh.sh
