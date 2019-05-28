@@ -34,6 +34,24 @@ docker build <own-image-name> .
 docker run -d -p 8080:8080 <own-image-name>
 ```
 
+### Docker run for SSH testing ###
+```
+docker run -d -P <container-name> <own-image-name>
+
+```
+Lookup port for ssh
+
+```
+docker port <container-name> 22
+
+```
+Use shown port in:
+
+```
+ssh root@localhost -P <Port-from-above>
+
+```
+
 ### Lookup Tomcat: ###
 ```
 curl http://localhost:8080
