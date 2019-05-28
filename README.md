@@ -7,7 +7,7 @@ StandAllone Oracle Apex Playground - Project
 - [x] setting up devZone
 - [x] setting up Dockerimage 
 - [x] Add Java (default JDK) 
-- [x] Add Tomcat 8.40 ( some issues with 9 )  on Ubuntu 18.04
+- [-] Add Tomcat 8.40 ( some issues with 9 )  on Ubuntu 18.04 // Removed for now
 - [ ] Add SSH
 - [ ] Add Oracle Express (latest simply working)
 - [ ] Add APEX (latest simply working)
