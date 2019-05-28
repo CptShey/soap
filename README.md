@@ -1,18 +1,18 @@
 # SOAP
-StandAllone Oracle Apex Playground - Project 
+StandAllone Oracle Apex Playground - Project
 
 ---
 
 ### TASKs ###
 - [x] setting up devZone
-- [x] setting up Dockerimage 
-- [x] Add Java (default JDK) 
+- [x] setting up Dockerimage
+- [x] Add Java (default JDK)
 - [ ] Add Tomcat 8.40 ( some issues with 9 )  on Ubuntu 18.04 // Removed for now
-- [ ] Add SSH
+- [x] Add SSH
 - [ ] Add Oracle Express (latest simply working)
 - [ ] Add APEX (latest simply working)
 - [ ] Add ORDS
-- [ ] Add and Mange User-Rights 
+- [ ] Add and Mange User-Rights
 - [ ] Add Installroutine
 
 ---

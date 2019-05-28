@@ -4,4 +4,11 @@ MAINTAINER CptShey <cptshey@icloud.com>
 
 EXPOSE 22 8080
 COPY scripts /scripts
-CMD sh /scripts/install.sh
+
+RUN scripts/install.sh
+
+
+
+#temporarly
+
+CMD ["/usr/sbin/sshd", "-D"]
