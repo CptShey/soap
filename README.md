@@ -1,18 +1,19 @@
+![alt text](https://github.com/CptShey/soap/blob/master/soap_logo.png "S.O.A.P")
 # SOAP
 StandAllone Oracle Apex Playground - Project
-![alt text](https://github.com/CptShey/soap/blob/master/soap_logo.png "S.O.A.P")
+
 
 ---
 
 ### TASKs ###
 - [x] setting up devZone
 - [x] setting up Dockerimage
-- [x] Add Java (default JDK)
-- [ ] Add Tomcat 8.40 ( some issues with 9 )  on Ubuntu 18.04 // Removed for now
-- [x] Add SSH
-- [ ] Add Oracle Express (latest simply working)
-- [ ] Add APEX (latest simply working)
-- [ ] Add ORDS
+- [x] ~~Add Java (default JDK)~~ // Removed for now
+- [X] ~~Add Tomcat 8.40 ( some issues with 9 )  on Ubuntu 18.04~~ // Removed for now
+- [ ] Add SSH
+- [ ] Add Oracle Express ~~(latest simply working)~~ Version 18c
+- [ ] Add APEX ~~(latest simply working)~~ Version 19.1
+- [ ] ~~Add ORDS~~ // using EPG 
 - [ ] Add and Mange User-Rights
 - [ ] Add Installroutine
 
