@@ -17,6 +17,7 @@ The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the 
   * Set HTTP-Port
 
 ### ToDo HIGH: ###
+- [ ] Provide files
 - [ ] Solution for creating instance adminstrator automatically by using the environment password
 - [ ] Solution for refereshing the hostname in the listner & tnsnames files by each run 
 ### ToDo MIDDLE: ###
