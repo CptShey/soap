@@ -1,4 +1,4 @@
-![alt text](https://github.com/CptShey/soap/blob/master/soap_logo.png "S.O.A.P")
+![alt text](http://digitalreaktor.ddns.net/odbs/soap_logo.png "S.O.A.P")
 # Standallone-Oracle-Apex-Playground
 
 ---
