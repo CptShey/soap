@@ -20,7 +20,8 @@ The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the 
 - [ ] Check ORACLE License
 - [x] Provide files
 - [ ] Solution for creating instance adminstrator automatically by using the environment password
-- [ ] Solution for refereshing the hostname in the listner & tnsnames files by each run 
+- [ ] Solution for refereshing the hostname in the listner & tnsnames files by each run
+- [ ] CleanUp Image
 ### ToDo MIDDLE: ###
 - [ ] Add ORDS (to get it more stable, usefull and faster) // actually using EPG
 - [ ] Add ORDS -> Implement Webserver f.e. Tomcat
