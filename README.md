@@ -1,19 +1,29 @@
 ![alt text](https://github.com/CptShey/soap/blob/master/soap_logo.png "S.O.A.P")
 # Standallone-Oracle-Apex-Playground
 
-
 ---
+The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the embedded PL/SQL Gateway
 
-### TASKs ###
-- [x] setting up devZone
-- [x] setting up Dockerimage
-- [x] ~~Add Java (default JDK)~~ // Removed for now
-- [X] ~~Add Tomcat 8.40 ( some issues with 9 )  on Ubuntu 18.04~~ // Removed for now
-- [ ] Add SSH
-- [ ] Add Oracle Express ~~(latest simply working)~~ Version 18c
-- [ ] Add APEX ~~(latest simply working)~~ Version 19.1
-- [ ] ~~Add ORDS~~ // using EPG 
-- [ ] Add and Mange User-Rights
+### Whats was done: ###
+* Setup DevZone
+* Build an image with a runnuning ORACLE DB
+  * Creating DB and setup SYS-User by a given default PW
+  * StartUp Database
+* Implement APEX 19.1 in the current Build 
+  * Alter Container
+  * Create APEX environment
+  * Unlock the Anonymous User (for EPG)
+  * Setup EPG image directory
+  * Set HTTP-Port
+
+### ToDo: ###
+
+- [ ] Add ORDS (to get it more stable and faster) // actually using EPG
+- [ ] Add ORDS -> Implement Webserver f.e. Tomcat
+- [ ] Add ORDS -> Install ORDS
+- [ ] Add ORDS -> Implement the ORDS config in the APEX installscript
+- [ ] Add ORDS -> Add SSH connectivity
+- [ ] Solution for creating instance adminstrator automatically by using the environment password 
 - [ ] Add Installroutine
 
 ---
