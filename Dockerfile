@@ -19,6 +19,5 @@ RUN /scripts/dload.sh
 RUN /scripts/install_oraclexe18c.sh
 RUN /scripts/install_apex.sh
 
-#ToDo: Update hostname for the listner & tnsnames for each image-run -> by ENTRYPOINT or CMD
-#ADD start.sh /
-#ENTRYPOINT ["/start.sh"]
+CMD /scripts/start.sh
+ENTRYPOINT /bin/bash
