@@ -15,7 +15,7 @@ ENV ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
 ENV PATH $ORACLE_HOME/bin:$PATH
 ENV ORACLE_SID=XE
 
-
+RUN /scripts/dload.sh
 RUN /scripts/install_oraclexe18c.sh
 RUN /scripts/install_apex.sh
 
