@@ -1,18 +1,34 @@
-# SOAP
-StandAllone Oracle Apex Playground - Project
+![alt text](http://digitalreaktor.ddns.net/odbs/soap_logo.png "S.O.A.P")
+# Standallone-Oracle-Apex-Playground
 
 ---
+The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the embedded PL/SQL Gateway
 
-### TASKs ###
-- [x] setting up devZone
-- [x] setting up Dockerimage
-- [x] Add Java (default JDK)
-- [ ] Add Tomcat 8.40 ( some issues with 9 )  on Ubuntu 18.04 // Removed for now
-- [x] Add SSH
-- [ ] Add Oracle Express (latest simply working)
-- [ ] Add APEX (latest simply working)
-- [ ] Add ORDS
-- [ ] Add and Mange User-Rights
+### Whats was done: ###
+* Setup DevZone
+* Build an image with a runing ORACLE DB
+  * Creating DB and setup SYS-User by a given default PW
+  * StartUp Database
+* Implement APEX 19.1 in the current Build 
+  * Alter Container
+  * Create APEX environment
+  * Unlock the Anonymous User (for EPG)
+  * Setup EPG image directory
+  * Set HTTP-Port
+
+### ToDo HIGH: ###
+- [ ] Check ORACLE License
+- [x] Provide files
+- [ ] Solution for creating instance adminstrator automatically by using the environment password
+- [ ] Solution for refereshing the hostname in the listner & tnsnames files by each run
+- [ ] CleanUp Image
+### ToDo MIDDLE: ###
+- [ ] Add ORDS (to get it more stable, usefull and faster) // actually using EPG
+- [ ] Add ORDS -> Implement Webserver f.e. Tomcat
+- [ ] Add ORDS -> Install ORDS
+- [ ] Add ORDS -> Implement the ORDS config in the APEX installscript
+### ToDo LOW: ###
+- [ ] Add SSH connectivity for better administration
 - [ ] Add Installroutine
 
 ---
@@ -39,13 +55,13 @@ docker run -d -p 8080:8080 <own-image-name>
 docker run -d -P <container-name> <own-image-name>
 
 ```
-Lookup port for ssh
+### Lookup port for ssh ###
 
 ```
 docker port <container-name> 22
 
 ```
-Use shown port in:
+### Use shown port in: ###
 
 ```
 ssh root@localhost -P <Port-from-above>
