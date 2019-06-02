@@ -7,6 +7,10 @@ EXPOSE 1521 5500 8080
 ARG PASSWORD
 ENV PASSWORD ${PASSWORD:-start1234}
 
+ARG APEXADMINPWD
+ENV APEXADMINPWD ${APEXADMINPWD:-Start123!}
+
+
 COPY files /files
 COPY scripts /scripts
 
@@ -19,5 +23,6 @@ RUN /scripts/dload.sh
 RUN /scripts/install_oraclexe18c.sh
 RUN /scripts/install_apex.sh
 
-CMD /scripts/start.sh
-ENTRYPOINT /bin/bash
+
+ADD /scripts/start.sh /
+ENTRYPOINT ["/start.sh"]
