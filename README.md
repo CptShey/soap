@@ -9,7 +9,7 @@ The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the 
 * Build an image with a runing ORACLE DB
   * Creating DB and setup SYS-User by a given default PW
   * StartUp Database
-* Implement APEX 19.1 in the current Build 
+* Implement APEX 19.1 in the current Build
   * Alter Container
   * Create APEX environment
   * Unlock the Anonymous User (for EPG)
@@ -19,8 +19,8 @@ The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the 
 ### ToDo HIGH: ###
 - [ ] Check ORACLE License
 - [x] Provide files
-- [ ] Solution for creating instance adminstrator automatically by using the environment password
-- [ ] Solution for refereshing the hostname in the listner & tnsnames files by each run
+- [x] Solution for creating instance adminstrator automatically by using the environment password
+- [x] Solution for refereshing the hostname in the listner & tnsnames files by each run
 - [ ] CleanUp Image
 ### ToDo MIDDLE: ###
 - [ ] Add ORDS (to get it more stable, usefull and faster) // actually using EPG
@@ -67,9 +67,3 @@ docker port <container-name> 22
 ssh root@localhost -P <Port-from-above>
 
 ```
-
-### Lookup Tomcat: ###
-```
-curl http://localhost:8080
-```
-or use your Browser.
