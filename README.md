@@ -1,5 +1,5 @@
 ![alt text](http://digitalreaktor.ddns.net/odbs/soap_logo.png "S.O.A.P")
-# Standallone-Oracle-Apex-Playground
+# StandAlone-OracleDatabase-Apex-Playground
 
 ---
 The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the embedded PL/SQL Gateway
@@ -21,6 +21,9 @@ The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the 
 - [x] Provide files
 - [x] Solution for creating instance adminstrator automatically by using the environment password
 - [x] Solution for refereshing the hostname in the listner & tnsnames files by each run
+- [ ] Add Webserver
+- [ ] Add PHP
+- [ ] Add MySQL (for optional dev in MySQL and learn and try JDBC and PHP-Connection 
 - [ ] CleanUp Image
 ### ToDo MIDDLE: ###
 - [ ] Add ORDS (to get it more stable, usefull and faster) // actually using EPG
