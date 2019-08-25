@@ -1,4 +1,4 @@
-![alt text](http://digitalreaktor.ddns.net/odbs/soap_logo.png "S.O.A.P")
+![alt text](http://www.svujo.com/odbs/soap_logo.png "S.O.A.P")
 # StandAlone-OracleDatabase-Apex-Playground
 
 ---
