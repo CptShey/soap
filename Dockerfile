@@ -13,6 +13,7 @@ ENV APEXADMINPWD ${APEXADMINPWD:-Start123!}
 
 
 COPY scripts /scripts
+COPY files /files
 
 ENV ORACLE_DOCKER_INSTALL=TRUE
 ENV ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
