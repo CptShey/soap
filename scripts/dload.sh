@@ -10,6 +10,6 @@ echo "========================================================================="
 curl -O --progress-bar http://www.svujo.com/odbs/oracle-database-xe-18c-1.0-1.x86_64.rpm
 
 echo "========================================================================="
-echo "=                         CREATE DEBUGLOGS FOLER                        ="
+echo "=                         CREATE DEBUGLOGS FOLDER                        ="
 echo "========================================================================="
 mkdir /debuglogs
