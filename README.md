@@ -4,41 +4,25 @@
 ---
 The image environment is an ORACLE XE 18c on CentOS with APEX 19.1 by using the embedded PL/SQL Gateway
 
-### Whats was done: ###
-* Setup DevZone
-* Build an image with a runing ORACLE DB
-  * Creating DB and setup SYS-User by a given default PW
-  * StartUp Database
-* Implement APEX 19.1 in the current Build
-  * Alter Container
-  * Create APEX environment
-  * Unlock the Anonymous User (for EPG)
-  * Setup EPG image directory
-  * Set HTTP-Port
+### SOAP ###
+The project SOAP was born out of a student project work.The goal is to provide computer science students with a locally hosted Oracle database. The student has the ability to work remotely and play around with the database for his own developments without compromising a productive system. The associated Oracle Application Express Framework is intended to show the possibilities of how quickly complex tasks can be implemented without investing longer development times in a frontend.
 
-### ToDo HIGH: ###
-- [ ] Check ORACLE License
-- [x] Provide files
-- [x] Solution for creating instance adminstrator automatically by using the environment password
-- [x] Solution for refereshing the hostname in the listner & tnsnames files by each run
-- [ ] Add Webserver
-- [ ] Add PHP
-- [ ] Add MySQL (for optional dev in MySQL and learn and try JDBC and PHP-Connection 
-- [ ] CleanUp Image
-### ToDo MIDDLE: ###
-- [ ] Add ORDS (to get it more stable, usefull and faster) // actually using EPG
-- [ ] Add ORDS -> Implement Webserver f.e. Tomcat
-- [ ] Add ORDS -> Install ORDS
-- [ ] Add ORDS -> Implement the ORDS config in the APEX installscript
-### ToDo LOW: ###
-- [ ] Add SSH connectivity for better administration
-- [ ] Add Installroutine
+### License Terms: ###
+
+Please note for the use and the benefits the license terms for the version Orcale XE 18c. This version focuses on development and education.
+
 
 ---
 ## Get the prebuilt Image from Docker Hub ##
 ### Installation: ###
+
+For easy installation of the Docker image Kitematic is suitable.
+Find it here: https://kitematic.com or check your Docker menu for further informations.
+The image can be found in the DockerHub under the name projectsoap, Soap for Students. There you can easily create the prebuildet container.
+
+Terminal users can pull the project files with this name:
 ```
-docker pull cptshey/soap
+docker pull projectsoap/soap_student
 ```
 ## OR ##
 
@@ -53,20 +37,4 @@ docker build <own-image-name> .
 docker run -d -p 8080:8080 <own-image-name>
 ```
 
-### Docker run for SSH testing ###
-```
-docker run -d -P <container-name> <own-image-name>
 
-```
-### Lookup port for ssh ###
-
-```
-docker port <container-name> 22
-
-```
-### Use shown port in: ###
-
-```
-ssh root@localhost -P <Port-from-above>
-
-```
