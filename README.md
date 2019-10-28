@@ -18,7 +18,7 @@ Please note for the use and the benefits the license terms for the version Orcal
 
 For easy installation of the Docker image Kitematic is suitable.
 Find it here: https://kitematic.com or check your Docker menu for further informations.
-The image can be found in the DockerHub under the name ## projectsoap, Soap for Students ##. There you can easily create the prebuildet container.
+The image can be found in the DockerHub under the name "projectsoap, Soap for Students". There you can easily create the prebuildet container.
 
 Terminal users can pull the project files with this line:
 ```
