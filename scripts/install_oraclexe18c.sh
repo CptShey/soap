@@ -15,3 +15,24 @@ echo "========================================================================="
 echo "=                        SETUP ORACLE XE 18c                            ="
 echo "========================================================================="
 printf $PASSWORD\\n$PASSWORD\\n | /etc/init.d/oracle-xe-18c configure
+
+echo "========================================================================="
+echo "=                        ENABLE EM ACCESS                            ="
+echo "========================================================================="
+sqlplus sys/$PASSWORD as sysdba<<EOF
+startup;
+EXEC DBMS_XDB.SETLISTENERLOCALACCESS(FALSE);
+exit;
+EOF
+
+echo "========================================================================="
+echo "=                        CREATE USER "STUDENT"                            ="
+echo "========================================================================="
+
+sqlplus sys/$PASSWORD as sysdba<<EOF
+ALTER SESSION SET CONTAINER=XEPDB1;
+CREATE USER student IDENTIFIED BY th2019;
+GRANT ALL PRIVILEGES TO student;
+commit;
+exit;
+EOF
